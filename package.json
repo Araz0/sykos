@@ -1,0 +1,25 @@
+{
+  "name": "sykos",
+  "version": "1.0.0",
+  "description": "sykos wordpress theme project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Araz0/sykos.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "sykos",
+    "php"
+  ],
+  "author": "twitter@arazDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Araz0/sykos/issues"
+  },
+  "homepage": "https://github.com/Araz0/sykos#readme"
+}
