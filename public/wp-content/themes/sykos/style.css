@@ -1,0 +1,142 @@
+/*
+Theme Name: SYKOS
+Theme URI: https://sykos.net/
+Author: Araz Alhamdani
+Author URI: https://araz.dev/
+Description: theme for Thomas Sykos
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: clean, basic
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a, p {
+  color: #111;
+  line-height: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: #294e70;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+}
+
+body {
+  background-color: #111;
+  color: #ffffff;
+  font-family: "open sans";
+}
+
+header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 52rem;
+  overflow: hidden;
+  text-align: center;
+  background: url(media/117d700ff79f490587e0bbaad89bc84f.jpeg);
+  background-size: cover;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(230, 230, 230, 0)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(230, 230, 230, 0));
+  opacity: .7;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(230, 230, 230, 0)));
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(230, 230, 230, 0));
+  opacity: .7;
+}
+
+header * {
+  z-index: 1;
+}
+
+header nav {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 0.8rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+header #hero-logo {
+  margin: 1rem auto;
+}
+
+#section-intro {
+  background-color: white;
+}
+
+#section-intro * {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+#section-mission {
+  background-color: #294e70;
+}
+
+#section-mission * {
+  margin: 1rem 0px;
+  color: white;
+}
+
+#section-mission h2 {
+  color: #b5cce3;
+}
