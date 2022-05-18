@@ -14,27 +14,25 @@
 
     --family-font: "open sans";
 
-    --heading-h1: 3.052rem;
-    --heading-h2: 2.441rem;
-    --heading-h3: 1.953rem;
-    --heading-h4: 1.563rem;
-    --heading-h5: 1.25rem;
-    --body: 1rem;
-    --body-small: 0.8rem;
+    --heading-h1: 39.06px;
+    --heading-h2: 31.25px;
+    --heading-h3: 25.00px;
+    --heading-h4: 20.00px;
+    --heading-h5: 16px;
+    --body-larg: 14px;
+    --body: 12px;
+    --body-small: 10px;
 }
-
 
 @media (min-width: 768px) {
     :root {
-      --body-small: 13px;
+      --heading-h1: 48.83px;
+      --heading-h2: 39.06px;
+      --heading-h3: 31.25px;
+      --heading-h4: 25.00px;
+      --heading-h5: 20.00px;
+      --body-larg: 20.00px;
       --body: 16px;
-      --body-large: 18px;
-  
-      --heading-sm: 22px;
-      --heading-md: 28px;
-      --heading-lg: 38px;
-      --heading-xl: 52px;
-      --heading-2xl: 68px;
-      --heading-3xl: clamp(6rem, 7.1vw + 2.6rem, 9rem);
+      --body-small: 14.4px;
     }
 }
