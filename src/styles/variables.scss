@@ -1,0 +1,40 @@
+:root {
+    --color_white: hsl(210, 100%, 100%);
+    --color_grey_85: hsl(0, 0%, 85%);
+    --color_grey_95: hsl(0, 0%, 95%);
+    --color_black: hsl(0, 0%, 12%);
+    --color_blue_30: hsl(209, 46%, 30%);
+    --color_blue_80: hsl(210, 45%, 80%);
+    --color_blue_50: hsl(210, 45%, 50%);
+    --color_orange_50: hsl(30, 65%, 50%);
+    --color_green_50: hsl(125, 45%, 50%);
+    --color_red_50: hsl(0, 45%, 50%);
+
+    --gradient_shadow: linear-gradient(0deg, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 90%, 0));
+
+    --family-font: "open sans";
+
+    --heading-h1: 3.052rem;
+    --heading-h2: 2.441rem;
+    --heading-h3: 1.953rem;
+    --heading-h4: 1.563rem;
+    --heading-h5: 1.25rem;
+    --body: 1rem;
+    --body-small: 0.8rem;
+}
+
+
+@media (min-width: 768px) {
+    :root {
+      --body-small: 13px;
+      --body: 16px;
+      --body-large: 18px;
+  
+      --heading-sm: 22px;
+      --heading-md: 28px;
+      --heading-lg: 38px;
+      --heading-xl: 52px;
+      --heading-2xl: 68px;
+      --heading-3xl: clamp(6rem, 7.1vw + 2.6rem, 9rem);
+    }
+}

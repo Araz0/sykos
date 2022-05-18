@@ -1,9 +1,9 @@
 /*
 Theme Name: Sykos
-Theme URI: https://wordpress.org/themes/sykos/
-Author: Araz Alhamdnai
-Author URI: https://wordpress.org/
-Description: This theme is made custom for sykos
+Theme URI: https://sykos.net/
+Author: Araz Alhamdani
+Author URI: https://araz.dev/
+Description: This theme is made custom for Thomas Sykos
 Tags: one-column, custom-background, custom-colors, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1
 Requires at least: 5.0
@@ -12,4 +12,9 @@ Requires at least PHP: 7.0
 Text Domain: sykos.net
 */
 
-@import 'style.scss';
+@import 'variables.scss';
+@import 'base.scss';
+
+@import '_nav.scss';
+
+@import 'home.scss';
