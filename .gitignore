@@ -21,3 +21,8 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+# Configuration
+wp-config.php
+.vscode/
+.DS_Store

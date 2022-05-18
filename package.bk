@@ -1,0 +1,37 @@
+{
+  "name": "sykos",
+  "version": "1.0.0",
+  "description": "The final project of Content Management Systeme by @arazdev",
+  "main": "index.js",
+  "scripts": {
+    "build:php": "rsync -rvz --progress ./src/php/ ./public/wp-content/themes/sykos --delete",
+    "build:sass": "sass ./src/styles/index.scss ./public/wp-content/themes/sykos/style.css",
+    "build:js": "esbuild ./src/js/index.js --bundle --outfile=./public/wp-content/themes/sykos/js/script.js",
+    "build:fonts": "rsync -vaE --progress ./src/fonts/ ./public/wp-content/themes/sykos/fonts",
+    "build:favicons": "rsync -vaE --progress ./src/favicons/ ./public/wp-content/themes/sykos/favicons",
+    "build:images": "rsync -vaE --progress ./src/images/ ./public/wp-content/themes/sykos/images",
+    "build:files": "rsync -vaE --progress ./src/files/ ./public/wp-content/themes/sykos",
+    "build:views": "rsync -vaE --progress ./src/views/ ./public/wp-content/themes/sykos/views",
+    "build": "npm-run-all build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Araz0/sykos.git"
+  },
+  "keywords": [
+    "wordpress",
+    "CMS",
+    "YouTuber",
+    "website"
+  ],
+  "author": "@arazdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Araz0/sykos/issues"
+  },
+  "homepage": "https://github.com/Araz0/sykos#readme",
+  "dependencies": {
+    "esbuild": "^0.14.8",
+    "npm-run-all": "^4.1.5"
+  }
+}

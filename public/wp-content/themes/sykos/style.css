@@ -1,4 +1,17 @@
 /*
+Theme Name: Sykos
+Theme URI: https://wordpress.org/themes/sykos/
+Author: Araz Alhamdnai
+Author URI: https://wordpress.org/
+Description: This theme is made custom for sykos
+Tags: one-column, custom-background, custom-colors, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1
+Requires at least: 5.0
+Tested up to: 5.9
+Requires at least PHP: 7.0
+Text Domain: sykos.net
+*/
+/*
 Theme Name: SYKOS
 Theme URI: https://sykos.net/
 Author: Araz Alhamdani
@@ -32,14 +45,9 @@ h2 {
 }
 
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 3rem;
+  flex-direction: column;
+  width: 100%;
 }
 
 body {
@@ -50,20 +58,14 @@ body {
 
 header {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 52rem;
   overflow: hidden;
   text-align: center;
-  background: url(media/117d700ff79f490587e0bbaad89bc84f.jpeg);
+  background: url("./media/home-hero-bk.jpeg");
   background-size: cover;
 }
-
 header::before {
   content: "";
   position: absolute;
@@ -71,11 +73,9 @@ header::before {
   left: 0;
   width: 100%;
   height: 5rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(230, 230, 230, 0)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(230, 230, 230, 0));
-  opacity: .7;
+  opacity: 0.7;
 }
-
 header::after {
   content: "";
   position: absolute;
@@ -83,38 +83,27 @@ header::after {
   left: 0;
   width: 100%;
   height: 5rem;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(230, 230, 230, 0)));
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(230, 230, 230, 0));
-  opacity: .7;
+  opacity: 0.7;
 }
-
 header * {
   z-index: 1;
 }
-
 header nav {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0px auto;
   padding: 0.8rem;
 }
-
 header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
 }
-
 header nav ul li {
   list-style: none;
 }
-
 header nav ul li a {
   color: white;
 }
-
 header #hero-logo {
   margin: 1rem auto;
 }
@@ -122,7 +111,6 @@ header #hero-logo {
 #section-intro {
   background-color: white;
 }
-
 #section-intro * {
   margin: 1rem auto;
   text-align: center;
@@ -131,12 +119,12 @@ header #hero-logo {
 #section-mission {
   background-color: #294e70;
 }
-
 #section-mission * {
   margin: 1rem 0px;
   color: white;
 }
-
 #section-mission h2 {
   color: #b5cce3;
 }
+
+/*# sourceMappingURL=style.css.map */
