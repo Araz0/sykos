@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <?php include 'parts/head.php'; ?>
 <body>
     <?php //wp_body_open();?>
@@ -14,7 +14,7 @@
                 <li><a href="">Kontakt</a></li>
             </ul>
         </nav>
-        <img class="hero-home__logo" src="<?php echo get_template_directory_uri() ?>/media/SYKOS-logo-RGB-white.png" alt="SYKOS-logo-RGB-white">
+        <img class="hero-home__logo" src="<?php echo get_template_directory_uri() ?>/media/SYKOS-logo-RGB-white.png" alt="SYKOS logo RGB white">
         <cite class="hero-home__cite">Sie können die hohen Wellen des Meeres nicht ändern, so sehr Sie es versuchen. Zielführender ist, zu lernen, wie man in schwierigen Situationen navigiert</cite>
     </header>
     <main>
@@ -24,7 +24,52 @@
         </section>
         <section class="section-mission">
             <h3>Unsere Mission</h3>
+            <img src="<?php echo get_template_directory_uri() ?>/media/lighthouse-symbol.png" alt="abstract lighthouse symbol">
             <p>Wir begleiten Sie auf Ihrem Weg, und Sie bleiben auf Kurs. SYKOS ist zur Stelle, um in bewegten Zeiten anzupacken, wenn sich Hindernisse in den Weg stellen. Wir trainieren Sie, damit Sie auch unter Druck erfolgreich performen.</p>
+        </section>
+        <section class="section-services">
+            <h3>Unser angebot für Sie</h3>
+            <div class="section-services__options">
+                <div class="section-services__options__entry">
+                    <img src="<?php echo get_template_directory_uri() ?>/media/privatperson.png" alt="privatperson illustration">
+                    <a href="">PRIVATPERSON</a>
+                </div>
+                <span></span>
+                <div class="section-services__options__entry">
+                    <img src="<?php echo get_template_directory_uri() ?>/media/unternehmen.png" alt="unternehmen illustration">
+                    <a href="">UNTERNEHMEN</a>
+                </div>
+            </div>
+        </section>
+        <section class="section-nameHover-home">
+            <h3>Die vier Grundsäulen von</h3>
+            <?php include 'parts/sykos_header.php'; ?>
+            <h3>Ihr Partner auf dem Weg zum Erfolg.	</h3>
+        </section>
+        <section class="section-inspiration">
+            <div class="section-inspiration__story">
+                <h4>inspiring success</h4>
+                <img src="<?php echo get_template_directory_uri() ?>/media/unternehmen.png" alt="illustration 2 personen on radio air">
+                <p>Impulse sind ein notwendiges Instrument für Weiterentwicklung. Sie geben neuen Denkansätzen genügend Raum und erleichtern eingefahrene Wege zu verlassen. In unserer Podcast-Reihe bieten wir Ihnen regelmäßig Inspiration. Wir interviewen Menschen, die trotz starkem Gegenwind, nahe dem Kentern, den Weg zurück auf Kurs geschafft haben. <br>Neugierig geworden? Nehmen Sie sich Zeit und lassen Sie sich inspirieren…
+                </p>
+                <div class="section-inspiration__story__links">
+                    <?php include 'parts/socials/spotify.svg'; ?>
+                    <?php include 'parts/socials/youtube.svg'; ?>
+                    <?php include 'parts/socials/apple-music.svg'; ?>
+                </div>
+            </div>
+            <div class="section-inspiration__story">
+                <h4>weekly inspiration</h4>
+                <img src="<?php echo get_template_directory_uri() ?>/media/unternehmen.png" alt="illustration 2 personen on radio air">
+                <p>Profitieren Sie von neuen Perspektiven, überdenken Sie eingefahrene Denk- und Handlungsmuster. Holen Sie sich Ihre regelmäßige Motivation aus der SYKOS-Welt.<br>Folgen Sie uns auf:
+                </p>
+                <div class="section-inspiration__story__links">
+                <?php include 'parts/socials/twitter.svg'; ?>
+                <?php include 'parts/socials/instagram.svg'; ?>
+                <?php include 'parts/socials/facebook.svg'; ?>
+                <?php include 'parts/socials/linked-in.svg'; ?>
+                </div>
+            </div>
         </section>
     </main>
     <?php include 'parts/footer.php'; ?>

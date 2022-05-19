@@ -1,0 +1,19 @@
+.footer{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--color_blue_30);
+    color: var(--color_white);
+    ul{
+        margin: 2rem auto;
+    }
+    svg{
+        width: 32px;
+        height: 32px;
+        fill: var(--color_white);
+    }
+    &__logo{
+        max-height: 125px;
+    }
+}

@@ -1,0 +1,50 @@
+.sykos-container {
+    width: fit-content;
+    margin: 3rem auto;
+    &__name{
+        display: flex;
+        gap: 5px;
+        width: fit-content;
+        svg{
+            max-height: 80px;
+        }
+        svg:hover {
+            cursor: pointer;
+        }
+        &__SY:hover {
+            fill: var(--color_blue_50);
+        }
+        &__K:hover {
+            fill: var(--color_red_50);
+        }
+        &__O:hover {
+            fill: var(--color_orange_50);
+        }
+        &__S:hover {
+            fill: var(--color_green_50);
+        }
+    }
+    &__word{
+        position: relative;
+        margin-top: 0.5rem;
+        div{
+            visibility: hidden;
+            position: absolute;
+            width: 100%;
+            color: var(--color_white);
+            text-align: center;
+        }
+        &__SY{
+            background-color: var(--color_blue_50);
+        }
+        &__K{
+            background-color: var(--color_red_50);
+        }
+        &__O{
+            background-color: var(--color_orange_50);
+        }
+        &__S{
+            background-color: var(--color_green_50);
+        }
+    }
+}

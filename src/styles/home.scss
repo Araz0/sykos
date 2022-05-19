@@ -54,12 +54,81 @@
     }
 }
 .section-mission{
+    display: grid;
+    grid-template-areas: 
+    "header img"
+    "text text"; 
+    row-gap: 1rem;
     background-color: var(--color_blue_30);
-    *{
-        margin: 1rem 0px;
+    h3{
+        grid-area: header;
+        margin: auto 0;
+        color: var(--color_blue_80);
+    }
+    img{
+        grid-area: img;
+        opacity: 60%;
+        max-height: 100px;
+    }
+    p{
+        grid-area: text;
         color: var(--color_white);
     }
-    h2{
+}
+.section-services{
+    &__options{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+
+        span{
+            width: 80%;
+            display: block;
+            height: 5px;
+            border-bottom: 3px dashed gray;
+        }
+        &__entry{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img{
+                width: 360px;
+            }
+        }
+    }
+}
+.section-nameHover-home{
+    background-color: var(--color_black);
+    fill: var(--color_white);
+    
+    h3{
+        font-size: var(--heading-h3);
         color: var(--color_blue_80);
+        text-align: center;
+        margin: 1rem auto;
+    }
+}
+.section-inspiration{
+    gap: 5rem;
+
+    &__story{
+        h4{
+            text-align: center;
+        }
+        p{
+            margin: auto 1rem;
+
+        }
+        &__links{
+            display: flex;
+            width: fit-content;
+            margin: 2rem auto;
+            gap: 1rem;
+            svg{
+                width: 32px;
+                height: 32px;
+            }
+        }
     }
 }
