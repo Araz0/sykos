@@ -16,13 +16,16 @@ section{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 1rem;
+    padding: 3rem 1rem;
+    margin: 2rem auto;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: var(--family-font);
     font-weight: 400;
     line-height: 1.5;
+    margin-bottom: 1rem;
+    color: var(--color_blue_30);
 }
 
 h1 {
@@ -52,12 +55,16 @@ img{
 a{
     color: var(--color_black);
     text-decoration: none;
-    border-bottom: 3px solid;
 }
-
+a svg:hover{
+    fill: var(--color_blue_50);
+}
+.link{
+    border-bottom: var(--medium-stroke) solid;
+}
 p {
     margin-bottom: 1rem;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
 }
 
 li{

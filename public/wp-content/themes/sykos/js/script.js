@@ -19,6 +19,9 @@ function namePartHover(e){
         // code block
     } 
 }
+function toggleBurgerMenu(){
+    document.getElementsByClassName("navbar")[0].classList.toggle('open-menu');
+}
 
 function namePartHoverOut(e){
     let part = e.classList[0].slice(-2);

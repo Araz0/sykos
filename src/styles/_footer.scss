@@ -5,15 +5,43 @@
     padding: 2rem 1rem;
     background-color: var(--color_blue_30);
     color: var(--color_white);
+    align-items: center;
     ul{
         margin: 2rem auto;
+        li{
+            margin-bottom: 0.7rem;
+        }
     }
     svg{
         width: 32px;
         height: 32px;
         fill: var(--color_white);
     }
+    a{
+        color: var(--color_white);
+    }
     &__logo{
         max-height: 125px;
+    }
+}
+@media (min-width: 768px) {
+    .footer{
+        grid-template-areas: "nav logo legal" "nav socials legal";
+        gap: 3rem 0;
+        ul{
+            height: fit-content;
+        }
+        &__logo{
+            grid-area: logo;
+        }
+        &__socials{
+            grid-area: socials;
+        }
+        &__menu-pages{
+            grid-area: nav;
+        }
+        &__menu-legal{
+            grid-area: legal;
+        }
     }
 }

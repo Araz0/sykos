@@ -1,25 +1,25 @@
 <footer class="footer">
-    <img class="footer__logo" src="F/media/SYKOS-logo-RGB-white.png" alt="SYKOS logo RGB white">
+    <img class="footer__logo" src="<?php echo get_template_directory_uri() ?>/media/SYKOS-logo-RGB-white.png" alt="SYKOS logo RGB white">
     <ul class="footer__menu-pages">
-        <li>Home</li>
-        <li>Die SYKOS - Philosophie</li>
-        <li>Wer ist SYKOS</li>
-        <li>Kooperation</li>
-        <li>Offene Trainings / Termine</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Die SYKOS - Philosophie</a></li>
+        <li><a href="#">Wer ist SYKOS</a></li>
+        <li><a href="#">Kooperation</a></li>
+        <li><a href="#">Offene Trainings / Termine</a></li>
     </ul>
     <div class="footer__socials">
-        <?php include 'socials/twitter.svg'; ?>
-        <?php include 'socials/instagram.svg'; ?>
-        <?php include 'socials/facebook.svg'; ?>
-        <?php include 'socials/linked-in.svg'; ?>
+        <a href="#" target="_blank"><?php include 'socials/twitter.svg'; ?></a>
+        <a href="#" target="_blank"><?php include 'socials/instagram.svg'; ?></a>
+        <a href="#" target="_blank"><?php include 'socials/facebook.svg'; ?></a>
+        <a href="#" target="_blank"><?php include 'socials/linked-in.svg'; ?></a>
         <br>
-        <?php include 'socials/spotify.svg'; ?>
-        <?php include 'socials/youtube.svg'; ?>
-        <?php include 'socials/apple-music.svg'; ?>
+        <a href="#" target="_blank"><?php include 'socials/spotify.svg'; ?></a>
+        <a href="#" target="_blank"><?php include 'socials/youtube.svg'; ?></a>
+        <a href="#" target="_blank"><?php include 'socials/apple-music.svg'; ?></a>
     </div>
     <ul class="footer__menu-legal">
-        <li>AGB</li>
-        <li>Datenschutzerklärung</li>
-        <li>Kontakt</li>
+        <li><a href="#">AGB</a></li>
+        <li><a href="#">Datenschutzerklärung</a></li>
+        <li><a href="#">Kontakt</a></li>
     </ul>
 </footer>

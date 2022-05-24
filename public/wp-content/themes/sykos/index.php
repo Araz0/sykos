@@ -4,16 +4,7 @@
 <body>
     <?php //wp_body_open();?>
     <header class="hero-home">
-        <nav class="navbar">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Philosophie</a></li>
-                <li><a href="">SYKOS</a></li>
-                <li><a href="">Kooperation</a></li>
-                <li><a href="">Termine</a></li>
-                <li><a href="">Kontakt</a></li>
-            </ul>
-        </nav>
+    <?php include 'parts/nav.php'; ?>
         <img class="hero-home__logo" src="<?php echo get_template_directory_uri() ?>/media/SYKOS-logo-RGB-white.png" alt="SYKOS logo RGB white">
         <cite class="hero-home__cite">Sie können die hohen Wellen des Meeres nicht ändern, so sehr Sie es versuchen. Zielführender ist, zu lernen, wie man in schwierigen Situationen navigiert</cite>
     </header>
@@ -23,21 +14,25 @@
             <p>Ihre Projekte sind einer unruhigen See mit unerwartet hohen Wellen ausgesetzt? <br>In Zeiten tiefgreifender Veränderungen sind wesentliche Fertigkeiten hilfreich, um Lösungen zu finden und definierte Ziele zu erreichen.</p>
         </section>
         <section class="section-mission">
-            <h3>Unsere Mission</h3>
-            <img src="<?php echo get_template_directory_uri() ?>/media/lighthouse-symbol.png" alt="abstract lighthouse symbol">
-            <p>Wir begleiten Sie auf Ihrem Weg, und Sie bleiben auf Kurs. SYKOS ist zur Stelle, um in bewegten Zeiten anzupacken, wenn sich Hindernisse in den Weg stellen. Wir trainieren Sie, damit Sie auch unter Druck erfolgreich performen.</p>
+            <div class="section-mission__container">
+                <h3>Unsere Mission</h3>
+                <img src="<?php echo get_template_directory_uri() ?>/media/lighthouse-symbol.png" alt="abstract lighthouse symbol">
+                <p>Wir begleiten Sie auf Ihrem Weg, und Sie bleiben auf Kurs. SYKOS ist zur Stelle, um in bewegten Zeiten anzupacken, wenn sich Hindernisse in den Weg stellen. Wir trainieren Sie, damit Sie auch unter Druck erfolgreich performen.</p>
+            </div>
         </section>
         <section class="section-services">
-            <h3>Unser angebot für Sie</h3>
-            <div class="section-services__options">
-                <div class="section-services__options__entry">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/privatperson.png" alt="privatperson illustration">
-                    <a href="">PRIVATPERSON</a>
-                </div>
-                <span></span>
-                <div class="section-services__options__entry">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/unternehmen.png" alt="unternehmen illustration">
-                    <a href="">UNTERNEHMEN</a>
+            <div class="section-services__container">
+                <h3>Unser angebot für Sie</h3>
+                <div class="section-services__options">
+                    <a class="section-services__options__entry" href="">
+                        <img src="<?php echo get_template_directory_uri() ?>/media/privatperson.png" alt="privatperson illustration">
+                        <span class="link">PRIVATPERSON</span>
+                    </a>
+                    <span class="section-services__options__seperator"></span>
+                    <a class="section-services__options__entry" href="">
+                        <img src="<?php echo get_template_directory_uri() ?>/media/unternehmen.png" alt="unternehmen illustration">
+                        <span class="link">UNTERNEHMEN</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -46,28 +41,38 @@
             <?php include 'parts/sykos_header.php'; ?>
             <h3>Ihr Partner auf dem Weg zum Erfolg.	</h3>
         </section>
+        <?php if( get_field('testimonials_shortcode') ): ?>
+            <section class="section-testomonials">
+                <?php echo do_shortcode( get_field('testimonials_shortcode') ) ?>
+            </section>
+        <?php endif; ?>
+            
         <section class="section-inspiration">
             <div class="section-inspiration__story">
                 <h4>inspiring success</h4>
-                <img src="<?php echo get_template_directory_uri() ?>/media/unternehmen.png" alt="illustration 2 personen on radio air">
-                <p>Impulse sind ein notwendiges Instrument für Weiterentwicklung. Sie geben neuen Denkansätzen genügend Raum und erleichtern eingefahrene Wege zu verlassen. In unserer Podcast-Reihe bieten wir Ihnen regelmäßig Inspiration. Wir interviewen Menschen, die trotz starkem Gegenwind, nahe dem Kentern, den Weg zurück auf Kurs geschafft haben. <br>Neugierig geworden? Nehmen Sie sich Zeit und lassen Sie sich inspirieren…
-                </p>
-                <div class="section-inspiration__story__links">
-                    <?php include 'parts/socials/spotify.svg'; ?>
-                    <?php include 'parts/socials/youtube.svg'; ?>
-                    <?php include 'parts/socials/apple-music.svg'; ?>
+                <img src="<?php echo get_template_directory_uri() ?>/media/Podcasting.png" alt="illustration 2 personen on radio air">
+                <div class="section-inspiration__story__desc">
+                    <p>Impulse sind ein notwendiges Instrument für Weiterentwicklung. Sie geben neuen Denkansätzen genügend Raum und erleichtern eingefahrene Wege zu verlassen. In unserer Podcast-Reihe bieten wir Ihnen regelmäßig Inspiration. Wir interviewen Menschen, die trotz starkem Gegenwind, nahe dem Kentern, den Weg zurück auf Kurs geschafft haben. <br>Neugierig geworden? Nehmen Sie sich Zeit und lassen Sie sich inspirieren…
+                    </p>
+                    <div class="section-inspiration__story__links">
+                        <a href="#" target="_blank"><?php include 'parts/socials/spotify.svg'; ?></a>
+                        <a href="#" target="_blank"><?php include 'parts/socials/youtube.svg'; ?></a>
+                        <a href="#" target="_blank"><?php include 'parts/socials/apple-music.svg'; ?></a>
+                    </div>
                 </div>
             </div>
             <div class="section-inspiration__story">
                 <h4>weekly inspiration</h4>
-                <img src="<?php echo get_template_directory_uri() ?>/media/unternehmen.png" alt="illustration 2 personen on radio air">
-                <p>Profitieren Sie von neuen Perspektiven, überdenken Sie eingefahrene Denk- und Handlungsmuster. Holen Sie sich Ihre regelmäßige Motivation aus der SYKOS-Welt.<br>Folgen Sie uns auf:
-                </p>
-                <div class="section-inspiration__story__links">
-                <?php include 'parts/socials/twitter.svg'; ?>
-                <?php include 'parts/socials/instagram.svg'; ?>
-                <?php include 'parts/socials/facebook.svg'; ?>
-                <?php include 'parts/socials/linked-in.svg'; ?>
+                <img src="<?php echo get_template_directory_uri() ?>/media/Co-Founders.png" alt="illustration 2 handshaking on an idea">
+                <div class="section-inspiration__story__desc">
+                    <p>Profitieren Sie von neuen Perspektiven, überdenken Sie eingefahrene Denk- und Handlungsmuster. Holen Sie sich Ihre regelmäßige Motivation aus der SYKOS-Welt.<br>Folgen Sie uns auf:
+                    </p>
+                    <div class="section-inspiration__story__links">
+                        <a href="#" target="_blank"><?php include 'parts/socials/twitter.svg'; ?></a>
+                        <a href="#" target="_blank"><?php include 'parts/socials/instagram.svg'; ?></a>
+                        <a href="#" target="_blank"><?php include 'parts/socials/facebook.svg'; ?></a>
+                        <a href="#" target="_blank"><?php include 'parts/socials/linked-in.svg'; ?></a>
+                    </div>
                 </div>
             </div>
         </section>

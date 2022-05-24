@@ -31,6 +31,7 @@
             visibility: hidden;
             position: absolute;
             width: 100%;
+            padding: 0.5rem 0;
             color: var(--color_white);
             text-align: center;
         }
@@ -46,5 +47,11 @@
         &__S{
             background-color: var(--color_green_50);
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .sykos-container__name svg{
+        max-height: 180px;
     }
 }
