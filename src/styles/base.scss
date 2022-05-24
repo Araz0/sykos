@@ -70,3 +70,10 @@ p {
 li{
     list-style: none;
 }
+.seperator{
+    display: block;
+    width: 80%;
+    height: 5px;
+    margin: 0 auto;
+    border-bottom: var(--medium-stroke) dashed var(--color_grey_55);
+}
