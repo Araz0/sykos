@@ -19,6 +19,26 @@ function namePartHover(e){
         // code block
     } 
 }
+function namePartClick(e, path){
+    let part = e.classList[0].slice(-2);
+
+    switch(part) {
+    case "SY":
+        window.location.href = path;
+        break;
+    case "_K":
+        window.location.href = path;
+        break;
+    case "_O":
+        window.location.href = path;
+        break;
+    case "_S":
+        window.location.href = path;
+        break;
+    default:
+        // code block
+    } 
+}
 function toggleBurgerMenu(){
     document.getElementsByClassName("navbar")[0].classList.toggle('open-menu');
 }
@@ -43,3 +63,19 @@ function namePartHoverOut(e){
         // code block
     } 
 }
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("sp-testimonial-item");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+} 

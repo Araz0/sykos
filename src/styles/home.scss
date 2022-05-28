@@ -6,12 +6,15 @@
     overflow: hidden;
     text-align: center;
     background: url('./media/home-hero-bk.jpeg');
+
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-repeat:   no-repeat;
-    background-position: center top;              /* optional, center the image */
+    // background-position: center top;              /* optional, center the image */
+    background-position: center center;
     &::before {
         content: ""; // ::before and ::after both require content
         position: absolute;
@@ -167,7 +170,7 @@
         margin-top: 3rem;
         &__entry img{
             max-width: 512px;
-            width: auto;
+            width: 100%;
         }
 
         &__seperator{

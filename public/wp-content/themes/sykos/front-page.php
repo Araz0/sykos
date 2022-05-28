@@ -24,12 +24,16 @@
             <div class="section-services__container">
                 <h3>Unser angebot für Sie</h3>
                 <div class="section-services__options">
-                    <a class="section-services__options__entry" href="">
+                    <?php 
+                    $services_uri1 = get_permalink( get_page_by_path( 'privatperson' ) );
+                    $services_uri2 = get_permalink( get_page_by_path( 'unternehmen' ) );
+                    ?>
+                    <a class="section-services__options__entry" href="<?php echo esc_url( $services_uri1 ); ?>">
                         <img src="<?php echo get_template_directory_uri() ?>/media/privatperson.png" alt="privatperson illustration">
                         <span class="link">PRIVATPERSON</span>
                     </a>
                     <span class="section-services__options__seperator"></span>
-                    <a class="section-services__options__entry" href="">
+                    <a class="section-services__options__entry" href="<?php echo esc_url( $services_uri2 ); ?>">
                         <img src="<?php echo get_template_directory_uri() ?>/media/unternehmen.png" alt="unternehmen illustration">
                         <span class="link">UNTERNEHMEN</span>
                     </a>
@@ -44,7 +48,14 @@
         <?php if( get_field('testimonials_shortcode') ): ?>
             <section class="section-testomonials">
                 <?php echo do_shortcode( get_field('testimonials_shortcode') ) ?>
+                <!-- The dots/circles -->
+                <!-- <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div> -->
             </section>
+            <span class="seperator"></span>
         <?php endif; ?>
             
         <section class="section-inspiration">

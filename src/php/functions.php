@@ -21,11 +21,19 @@
   function register_my_menus(){
     register_nav_menus(
       array(
-        'main-left' => 'Main Left',
-        'main-right' => 'Main Right',
-        'footer-menu' => 'Footer Menu'
+        'main-menu' => 'Main Menu',
+        'footer-right' => 'Footer Right',
+        'footer-left' => 'Footer Left'
       )
     );
   }
   add_action('init','register_my_menus');
+  function get_id_by_slug($page_slug) {
+    $page = get_page_by_path($page_slug);
+    if ($page) {
+        return $page->ID;
+    } else {
+        return null;
+    }
+} 
 ?>
