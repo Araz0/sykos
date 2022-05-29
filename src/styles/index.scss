@@ -12,12 +12,13 @@ Requires at least PHP: 7.0
 Text Domain: sykos.net
 */
 
-@import 'variables.scss';
-@import 'base.scss';
-@import '_nav.scss';
-@import '_footer.scss';
-@import '_sykos_name.scss';
-@import 'home.scss';
-@import 'about.scss';
+@import "variables.scss";
+@import "base.scss";
+@import "_nav.scss";
+@import "_footer.scss";
+@import "_sykos_name.scss";
+@import "home.scss";
+@import "about.scss";
+@import "contact.scss";
 
-@import 'testimonials.scss';
+@import "testimonials.scss";

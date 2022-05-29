@@ -1,0 +1,49 @@
+.page-contact {
+  .page__title {
+    margin: 3rem 5%;
+  }
+}
+.section-contact {
+  background-color: var(--color_grey_05);
+  color: var(--color_white);
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    &__form {
+      display: flex;
+      flex-direction: column;
+      min-width: 40%;
+      gap: 0.6rem;
+      label {
+        margin-bottom: -0.4rem;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        height: 2rem;
+      }
+      button[type="submit"]{
+        width: 12rem;
+        height: 2.5rem;
+        background-color: var(--color_blue_50);
+        border: none;
+        border-radius: 8px;
+        color: var(--color_white);;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .page-contact {
+    .page__title {
+        margin: 3rem 10%;
+    }
+  }
+  .section-contact__container {
+    width: 80%;
+    flex-direction: row;
+  }
+}

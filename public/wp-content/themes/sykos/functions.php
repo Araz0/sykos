@@ -28,6 +28,15 @@
     );
   }
   add_action('init','register_my_menus');
+
+  add_action( 'phpmailer_init', 'mailer_config', 10, 1);
+  function mailer_config(PHPMailer $mailer){
+    $mailer->IsSMTP();
+    $mailer->Host = "localhost"; // your SMTP server
+    $mailer->Port = 25;
+    $mailer->SMTPDebug = 2; // write 0 if you don't want to see client/server communication in page
+    $mailer->CharSet  = "utf-8";
+  }
   function get_id_by_slug($page_slug) {
     $page = get_page_by_path($page_slug);
     if ($page) {

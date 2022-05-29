@@ -2,7 +2,8 @@
 <html lang="de">
     <?php include 'parts/head.php'; ?>
 <body>
-    <?php //wp_body_open();?>
+<!-- <?php wp_body_open();?> -->
+
     <header class="hero-home">
     <?php $dark_nav = false; include 'parts/nav.php'; ?>
         <img class="hero-home__logo" src="<?php echo get_template_directory_uri() ?>/media/SYKOS-logo-RGB-white.png" alt="SYKOS logo RGB white">

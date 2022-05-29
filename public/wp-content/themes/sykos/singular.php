@@ -2,7 +2,7 @@
 <html lang="de">
     <?php include 'parts/head.php'; ?>
 <body>
-    <?php //wp_body_open();?>
+<!-- <?php wp_body_open();?> -->
     <?php
             $thumbnail_Link = get_template_directory_uri()."/media/home-hero-bk.jpeg";
             $thumbnaul_alt = "page thumbnail image";
