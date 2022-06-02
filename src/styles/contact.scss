@@ -12,7 +12,7 @@
     gap: 3rem;
     width: 90%;
     margin: 0 auto;
-    &__form {
+    &form {
       display: flex;
       flex-direction: column;
       min-width: 40%;
@@ -25,13 +25,20 @@
       input[type="tel"] {
         height: 2rem;
       }
-      button[type="submit"]{
+      input,
+      textarea {
+        border-radius: 5px;
+        border: none;
+      }
+      button[type="submit"] {
         width: 12rem;
         height: 2.5rem;
         background-color: var(--color_blue_50);
         border: none;
         border-radius: 8px;
-        color: var(--color_white);;
+        color: var(--color_white);
+        font-size: var(--heading-h5);
+        cursor: pointer;
       }
     }
   }
@@ -39,7 +46,7 @@
 @media (min-width: 768px) {
   .page-contact {
     .page__title {
-        margin: 3rem 10%;
+      margin: 3rem 10%;
     }
   }
   .section-contact__container {

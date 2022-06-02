@@ -275,7 +275,7 @@ li {
 @media (min-width: 768px) {
   .navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
     padding: 0.8rem;
   }
   .navbar__logo {
@@ -736,27 +736,34 @@ li {
   width: 90%;
   margin: 0 auto;
 }
-.section-contact__container__form {
+.section-contact__containerform {
   display: flex;
   flex-direction: column;
   min-width: 40%;
   gap: 0.6rem;
 }
-.section-contact__container__form label {
+.section-contact__containerform label {
   margin-bottom: -0.4rem;
 }
-.section-contact__container__form input[type=text],
-.section-contact__container__form input[type=email],
-.section-contact__container__form input[type=tel] {
+.section-contact__containerform input[type=text],
+.section-contact__containerform input[type=email],
+.section-contact__containerform input[type=tel] {
   height: 2rem;
 }
-.section-contact__container__form button[type=submit] {
+.section-contact__containerform input,
+.section-contact__containerform textarea {
+  border-radius: 5px;
+  border: none;
+}
+.section-contact__containerform button[type=submit] {
   width: 12rem;
   height: 2.5rem;
   background-color: var(--color_blue_50);
   border: none;
   border-radius: 8px;
   color: var(--color_white);
+  font-size: var(--heading-h5);
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

@@ -44,5 +44,14 @@
     } else {
         return null;
     }
-} 
+  } 
+
+  $role = get_role('editor'); 
+  $role->add_cap('edit_theme_options');
+
+  function filter_content_example($content) {
+    $content = do_shortcode($content);
+    return $content;
+  }
+  add_filter('the_content', 'filter_content_example');
 ?>

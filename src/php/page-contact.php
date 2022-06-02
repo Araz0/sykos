@@ -33,7 +33,10 @@
 
         <section class="section-contact">
             <div class="section-contact__container">
-                <form class="section-contact__container__form" action="" method="post">
+                <?php if( get_field('contact_form_shortcode') ): ?>
+                    <?php echo do_shortcode( get_field('contact_form_shortcode') ) ?>
+                <?php endif; ?>
+                <!-- <form class="section-contact__container__form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                     <label for="name">Name:</label>
                     <input name="name" type="text"/>
 
@@ -47,7 +50,7 @@
                     <textarea name="message" cols="30" rows="5"></textarea>
 
                     <button name="submitContact" type="submit" value="Submit">Senden</button>
-                </form>
+                </form> -->
                 <div class="section-contact__container__message">
                     <?php echo get_the_content(); ?>
                 </div>

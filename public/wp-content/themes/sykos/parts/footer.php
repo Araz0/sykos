@@ -17,14 +17,14 @@
         <?php endforeach; ?>
     </ul>
     <div class="footer__socials">
-        <a href="#" target="_blank"><?php include 'socials/twitter.svg'; ?></a>
-        <a href="#" target="_blank"><?php include 'socials/instagram.svg'; ?></a>
-        <a href="#" target="_blank"><?php include 'socials/facebook.svg'; ?></a>
-        <a href="#" target="_blank"><?php include 'socials/linked-in.svg'; ?></a>
-        <br>
-        <a href="#" target="_blank"><?php include 'socials/spotify.svg'; ?></a>
-        <a href="#" target="_blank"><?php include 'socials/youtube.svg'; ?></a>
-        <a href="#" target="_blank"><?php include 'socials/apple-music.svg'; ?></a>
+        <!-- <a href="#" target="_blank"><?php include 'socials/twitter.svg'; ?></a> -->
+        <a href="https://www.instagram.com/tom.sykos/" target="_blank"><?php include 'socials/instagram.svg'; ?></a>
+        <!-- <a href="#" target="_blank"><?php include 'socials/facebook.svg'; ?></a> -->
+        <a href="https://www.linkedin.com/in/thomas-wieser-8ba8a515a/" target="_blank"><?php include 'socials/linked-in.svg'; ?></a>
+        <!-- <br> -->
+        <!-- <a href="#" target="_blank"><?php include 'socials/spotify.svg'; ?></a> -->
+        <!-- <a href="#" target="_blank"><?php include 'socials/youtube.svg'; ?></a> -->
+        <!-- <a href="#" target="_blank"><?php include 'socials/apple-music.svg'; ?></a> -->
     </div>
     <ul class="footer__menu-legal">
         <?php

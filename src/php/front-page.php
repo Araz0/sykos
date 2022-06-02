@@ -81,9 +81,9 @@
                     </p>
                     <div class="section-inspiration__story__links">
                         <a href="#" target="_blank"><?php include 'parts/socials/twitter.svg'; ?></a>
-                        <a href="#" target="_blank"><?php include 'parts/socials/instagram.svg'; ?></a>
+                        <a href="https://www.instagram.com/tom.sykos/" target="_blank"><?php include 'parts/socials/instagram.svg'; ?></a>
                         <a href="#" target="_blank"><?php include 'parts/socials/facebook.svg'; ?></a>
-                        <a href="#" target="_blank"><?php include 'parts/socials/linked-in.svg'; ?></a>
+                        <a href="https://www.linkedin.com/in/thomas-wieser-8ba8a515a/" target="_blank"><?php include 'parts/socials/linked-in.svg'; ?></a>
                     </div>
                 </div>
             </div>
