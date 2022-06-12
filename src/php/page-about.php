@@ -30,7 +30,7 @@
                 <img src="<?php echo $img1_path ?>" alt="Tom Sykos image 1" class="section-bio__container__img1">
                 <div class="section-bio__container__bio_text">
                     <h2 class="section-bio__container__bio_text__header">
-                        Thomas Weiser
+                        Thomas Wieser
                     </h2>
                     <p class="section-bio__container__bio_text__desc">
                         <?php echo get_the_content(); ?>
