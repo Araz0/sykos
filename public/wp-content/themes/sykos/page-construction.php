@@ -11,7 +11,8 @@
                 $thumbnaul_alt = get_the_post_thumbnail_caption();
             }
         ?>
-    <header class="page-hero" style="background-image: url('<?php echo $thumbnail_Link ?>');">
+    <header class="" style="background-image: url('<?php echo $thumbnail_Link ?>'); display: flex;">
+        <img class="hero-home__logo" style="max-height: 22rem;" src="<?php echo get_template_directory_uri() ?>/media/SYKOS-logo-RGB-white.png" alt="SYKOS logo RGB white">
     </header>
     <main class="page limit-page-width">
         <h2 class="page__title"><?php echo get_the_title(); ?></h2>
