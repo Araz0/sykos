@@ -1,5 +1,7 @@
-html {font-size: 120%;}
-*{
+html {
+    font-size: 120%;
+}
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -13,7 +15,7 @@ body {
     background: var(--color_white);
     background-color: var(--color_white);
 }
-section{
+section {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -21,7 +23,11 @@ section{
     margin: 2rem auto;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: var(--family-font);
     font-weight: 100;
     line-height: 1.5;
@@ -43,24 +49,31 @@ h3 {
     font-size: var(--heading-h3);
 }
 
-h4 {font-size: var(--heading-h4);}
+h4 {
+    font-size: var(--heading-h4);
+}
 
-h5 {font-size: var(--heading-h5);}
+h5 {
+    font-size: var(--heading-h5);
+}
 
-small, .text_small {font-size: var(--body-small);}
+small,
+.text_small {
+    font-size: var(--body-small);
+}
 
-img{
+img {
     max-width: 100%;
 }
 
-a{
+a {
     color: var(--color_black);
     text-decoration: none;
 }
-a svg:hover{
+a svg:hover {
     fill: var(--color_blue_50);
 }
-.link{
+.link {
     border-bottom: var(--medium-stroke) solid;
 }
 p {
@@ -68,29 +81,32 @@ p {
     line-height: 1.5rem;
 }
 
-li{
+li {
     list-style: none;
 }
-.seperator{
+.seperator {
     display: block;
     width: 80%;
     height: 5px;
     margin: 0 auto;
     border-bottom: var(--medium-stroke) dashed var(--color_grey_55);
 }
-.page-title{
+.page-title {
     margin-left: 3rem;
 }
-.page{
+.page {
     margin: 0 5%;
-    &-hero{
+    a {
+        color: var(--color_blue_30);
+    }
+    &-hero {
         min-height: 25rem;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background-repeat:   no-repeat;
-        background-position: center top;              /* optional, center the image */
+        background-repeat: no-repeat;
+        background-position: center top; /* optional, center the image */
         &::before {
             content: ""; // ::before and ::after both require content
             position: absolute;
@@ -98,50 +114,50 @@ li{
             left: 0;
             width: 100%;
             height: 10rem;
-            opacity: .7;
+            opacity: 0.7;
             background-image: var(--gradient_shadow);
             -webkit-transform: rotateX(180deg);
             transform: rotateX(180deg);
         }
     }
-    &-post{
+    &-post {
         margin-top: 0;
         margin-bottom: 0;
     }
-    &__title{
+    &__title {
         margin-top: 3rem;
     }
 }
-.section-abposts{
+.section-abposts {
     margin-top: 0;
     gap: 3rem;
-    &__post{
-        &__content__cite{
+    &__post {
+        &__content__cite {
             color: var(--color_blue_30);
         }
-        &__content__text{
+        &__content__text {
             margin-top: 1rem;
         }
     }
 }
 @media (min-width: 768px) {
-    .page{
+    .page {
         margin: 0 10%;
-        &-hero{
+        &-hero {
             min-height: 16rem;
             height: 25rem;
             background-position: center center;
         }
     }
-    .section-abposts{
-        &__post{
+    .section-abposts {
+        &__post {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "img content";
             column-gap: 2rem;
-            &__img{
+            &__img {
                 grid-area: img;
-                img{
+                img {
                     max-height: 20rem;
                     object-fit: cover;
                     width: 100%;
@@ -153,7 +169,7 @@ li{
         }
     }
 }
-.limit-page-width{
+.limit-page-width {
     margin: 0 auto !important;
     max-width: 1280px;
 }
