@@ -7,6 +7,7 @@
     "start": "sudo service apache2 start && sudo service mysql start",
     "build:php": "rsync -rvz ./src/php/ ./public/wp-content/themes/sykos --delete",
     "build:sass": "sass ./src/styles/index.scss ./public/wp-content/themes/sykos/style.css",
+    "build:fonts": "rsync -vaE --progress ./src/fonts/ ./public/wp-content/themes/sykos/fonts",
     "build:js": "rsync -vaE ./src/js/ ./public/wp-content/themes/sykos/js",
     "build:media": "rsync -vaE ./src/media/ ./public/wp-content/themes/sykos/media",
     "build:favicons": "rsync -vaE ./src/favicons/ ./public/wp-content/themes/sykos/favicons",

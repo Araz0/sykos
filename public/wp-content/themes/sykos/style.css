@@ -25,7 +25,7 @@ Text Domain: sykos.net
   --color_green_50: hsl(125, 45%, 50%);
   --color_red_50: hsl(0, 45%, 50%);
   --gradient_shadow: linear-gradient(0deg, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 90%, 0));
-  --family-font: "open sans";
+  --family-font: brandon-grotesque, sans-serif;
   --heading-h1: 39.06px;
   --heading-h2: 31.25px;
   --heading-h3: 25.00px;
@@ -50,6 +50,36 @@ Text Domain: sykos.net
     --body-small: 14.4px;
   }
 }
+@font-face {
+  font-family: "brandon-grotesque";
+  src: url("fonts/Brandon_blk.otf");
+  font-weight: 800;
+  font-style: black;
+}
+@font-face {
+  font-family: "brandon-grotesque";
+  src: url("fonts/Brandon_bld.otf");
+  font-weight: 600;
+  font-style: bold;
+}
+@font-face {
+  font-family: "brandon-grotesque";
+  src: url("fonts/Brandon_med.otf");
+  font-weight: 600;
+  font-style: medium;
+}
+@font-face {
+  font-family: "brandon-grotesque";
+  src: url("fonts/Brandon_reg_it.otf");
+  font-weight: 400;
+  font-style: Regular-Italic;
+}
+@font-face {
+  font-family: "brandon-grotesque";
+  src: url("fonts/Brandon_reg.otf");
+  font-weight: 400;
+  font-style: normal;
+}
 html {
   font-size: 100%;
 }
@@ -63,7 +93,8 @@ html {
 
 body {
   font-family: var(--family-font);
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 100;
   line-height: 1.75;
   color: var(--color_black);
   background: var(--color_white);
@@ -80,7 +111,7 @@ section {
 
 h1, h2, h3, h4, h5 {
   font-family: var(--family-font);
-  font-weight: 400;
+  font-weight: 100;
   line-height: 1.5;
   margin-bottom: 1rem;
   color: var(--color_blue_30);
@@ -730,32 +761,35 @@ li {
   color: var(--color_white);
 }
 .section-contact__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 3rem;
   width: 90%;
   margin: 0 auto;
 }
-.section-contact__containerform {
+
+form {
   display: flex;
   flex-direction: column;
   min-width: 40%;
   gap: 0.6rem;
 }
-.section-contact__containerform label {
+form label {
   margin-bottom: -0.4rem;
 }
-.section-contact__containerform input[type=text],
-.section-contact__containerform input[type=email],
-.section-contact__containerform input[type=tel] {
+form input[type=text],
+form input[type=email],
+form input[type=tel] {
   height: 2rem;
+  width: 100%;
 }
-.section-contact__containerform input,
-.section-contact__containerform textarea {
+form input,
+form textarea {
   border-radius: 5px;
   border: none;
+  width: 100%;
 }
-.section-contact__containerform button[type=submit] {
+form input[type=submit] {
   width: 12rem;
   height: 2.5rem;
   background-color: var(--color_blue_50);
@@ -773,7 +807,7 @@ li {
 
   .section-contact__container {
     width: 80%;
-    flex-direction: row;
+    grid-template-columns: 1fr 2fr;
   }
 }
 .section-testomonials > div > div {

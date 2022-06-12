@@ -6,7 +6,8 @@ html {font-size: 100%;} /*16px*/
 }
 body {
     font-family: var(--family-font);
-    font-weight: 400;
+    font-style: normal;
+    font-weight: 100;
     line-height: 1.75;
     color: var(--color_black);
     background: var(--color_white);
@@ -22,7 +23,7 @@ section{
 
 h1, h2, h3, h4, h5 {
     font-family: var(--family-font);
-    font-weight: 400;
+    font-weight: 100;
     line-height: 1.5;
     margin-bottom: 1rem;
     color: var(--color_blue_30);

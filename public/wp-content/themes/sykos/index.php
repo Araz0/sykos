@@ -22,7 +22,7 @@
         </section>
         <section class="section-services">
             <div class="section-services__container">
-                <h3>Unser angebot für Sie</h3>
+                <h3>Unser Angebot für Sie</h3>
                 <div class="section-services__options">
                     <a class="section-services__options__entry" href="">
                         <img src="<?php echo get_template_directory_uri() ?>/media/privatperson.png" alt="privatperson illustration">
