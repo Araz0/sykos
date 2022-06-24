@@ -1,58 +1,81 @@
 <!DOCTYPE html>
 <html lang="de">
-    <?php include 'parts/head.php'; ?>
+<?php include 'parts/head.php'; ?>
+
 <body>
-    <?php //wp_body_open();?>
+    <?php //wp_body_open();
+    ?>
     <header class="header-about">
-        <?php $dark_nav = true; include 'parts/nav.php'; ?>
+        <?php $dark_nav = true;
+        include 'parts/nav.php'; ?>
     </header>
     <main>
         <h2 class="page-title"><?php echo get_the_title(); ?></h2>
         <section class="section-nameHover-about">
-        <?php include 'parts/sykos_header.php'; ?>
+            <?php include 'parts/sykos_header.php'; ?>
         </section>
         <section class="section-bio">
             <div class="section-bio__container">
-                <?php 
-                $img1_path = get_template_directory_uri()."/media/placeholders/about_img_1.png";
-                $img2_path = get_template_directory_uri()."/media/placeholders/about_img_2.png";
-                $img3_path = get_template_directory_uri()."/media/placeholders/about_img_3.png";
+                <?php
+                $img1_path = get_template_directory_uri() . "/media/placeholders/about_img_1.png";
                 if (get_field('about_image_1')) {
-                    $img1_path = get_field('about_image_1');
-                }
-                if (get_field('about_image_2')) {
-                    $img2_path = get_field('about_image_2');
-                }
-                if (get_field('about_image_3')) {
-                    $img3_path = get_field('about_image_3');
+                    $img1_path = get_field('about_image_1')['url'];
                 }
                 ?>
-                <img src="<?php echo $img1_path ?>" alt="Tom Sykos image 1" class="section-bio__container__img1">
                 <div class="section-bio__container__bio_text">
                     <h2 class="section-bio__container__bio_text__header">
                         Thomas Wieser
                     </h2>
-                    <p class="section-bio__container__bio_text__desc">
+                    <div class="section-bio__container__bio_text__desc">
                         <?php echo get_the_content(); ?>
+                    </div>
+                </div>
+                <img src="<?php echo $img1_path ?>" alt="Tom Sykos image 1" class="section-bio__container__img1">
+            </div>
+
+            <div class="section-bio__container-double">
+                <div class="section-bio__container-double__ausbildungen">
+                    <h3>Relevante Ausbildungen bei namhaften Experten erweitern mein Fachwissen</h3>
+                    <p>
+                        Systemischer Organisationsberater und Coach, Ruth Seliger, Wien <br>
+                        Resilienztrainer und Coach, Stefan Mandl, Salzburg<br>
+                        Systemische Intervention, Paul Tolchinsky, Scottsdale, USA<br>
+                        Wingwave Sportmentalcoach, Cora Besser-Siegmund, Hamburg<br>
+                        Leadership und Gruppendynamik, Roswita Königswieser, Wien<br>
+                        Systemische Problemanalyse, Ulrich Clement, Heidelberg<br>
+                        Persönlichkeitsentwicklung, Ria Lindner, Wien<br>
+                        Change Management, Christof Schmitz, Bern<br>
+                        Verkauf und Kommunikation, Niklas Tripolt, Wien<br>
+                        Seminarleiter, Konzeption und Moderation, Neuland Development, Fulda<br>
                     </p>
                 </div>
-                <img src="<?php echo $img2_path ?>" alt="Tom Sykos image 2" class="section-bio__container__img2">
-                <img src="<?php echo $img3_path ?>" alt="Tom Sykos image 3" class="section-bio__container__img3">
+                <div class="section-bio__container-double__erfahrungen">
+                    <h3>Relevante berufliche Erfahrungen</h3>
+                    <p>
+                        Seit August 2019: SYKOS, Gründer und Inhaber <br>
+                        Jänner bis Juli 2019: Reisender und Weltenentdecker<br>
+                        März 1991 bis Dezember 2018:<br>
+                        Porsche Bank AG in unterschiedlichen Verantwortungen, unter anderem<br>
+                        Verkaufstrainer, Moderator und Coach (2011-2018)<br>
+                        Gebietsleiter Vertrieb (2001-2011)<br>
+                        Leitung Verkaufsinnendienst (1999-2001)<br>
+                    </p>
+                </div>
             </div>
         </section>
         <span class="seperator"></span>
         <section class="section-team">
-                <?php 
-                    $coop_title = "Kooperation";
-                    $coop_text = "In Kooperation mit folgenden selbständigen Beratern, Trainern und Coaches:";
-                    if (get_field('kooperation_title')) {
-                        $coop_title = get_field('kooperation_title');
-                    }
-                    if (get_field('kooperation_text')) {
-                        $coop_text = get_field('kooperation_text');
-                    }
+            <?php
+            $coop_title = "Kooperation";
+            $coop_text = "In Kooperation mit folgenden selbständigen Beratern, Trainern und Coaches:";
+            if (get_field('kooperation_title')) {
+                $coop_title = get_field('kooperation_title');
+            }
+            if (get_field('kooperation_text')) {
+                $coop_text = get_field('kooperation_text');
+            }
 
-                ?>
+            ?>
             <h2 class="section-team__header"><?php echo $coop_title; ?></h2>
             <p class="section-team__text"><?php echo $coop_text; ?></p>
             <div class="section-team__members_container">
@@ -66,7 +89,7 @@
                 <div class="section-team__members_container__member">
                     <img src="<?php echo get_template_directory_uri() ?>/media/team/team-member1.jpg" alt="sykos team member" class="section-team__members_container__member__img">
                     <p class="section-team__members_container__member__name">Magdalena Schusterbauer</p>
-                    <span class="section-team__members_container__member__title">Mentalcoach</span>
+                    <span class="section-team__members_container__member__title">Mentaltrainerin</span>
                 </div>
                 <div class="section-team__members_container__member">
                     <img src="<?php echo get_template_directory_uri() ?>/media/team/team-member2.jpg" alt="sykos team member" class="section-team__members_container__member__img">
@@ -93,5 +116,6 @@
     </main>
     <?php include 'parts/footer.php'; ?>
 </body>
-<script src="<?php echo get_template_directory_uri().'/js/script.js' ?>"></script>
+<script src="<?php echo get_template_directory_uri() . '/js/script.js' ?>"></script>
+
 </html>

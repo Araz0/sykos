@@ -1,20 +1,19 @@
-.hero-home{
+.hero-home {
     position: relative;
     display: flex;
     flex-direction: column;
     height: fit-content;
     overflow: hidden;
     text-align: center;
-    background: url('./media/home-hero-bk.jpeg');
-
+    background: url("./media/home_hero.jpg");
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-repeat:   no-repeat;
-    // background-position: center top;              /* optional, center the image */
-    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center top; /* optional, center the image */
+    // background-position: center center;
     &::before {
         content: ""; // ::before and ::after both require content
         position: absolute;
@@ -22,7 +21,7 @@
         left: 0;
         width: 100%;
         height: 10rem;
-        opacity: .7;
+        opacity: 0.7;
         background-image: var(--gradient_shadow);
         -webkit-transform: rotateX(180deg);
         transform: rotateX(180deg);
@@ -34,83 +33,85 @@
         left: 0;
         width: 100%;
         height: 10rem;
-        opacity: .7;
+        opacity: 0.7;
         background-image: var(--gradient_shadow);
     }
-    *{
+    * {
         z-index: 1;
     }
-    &__logo{
-        margin: 1rem auto;
+    &__logo {
+        margin: 0rem auto 3rem auto;
+        max-width: 35rem;
+        width: 100%;
     }
-    &__cite{
+    &__cite {
         color: var(--color_white);
         padding: 1rem;
     }
 }
 
-
-.section-intro{
+.section-intro {
     background-color: var(--color_white);
-    *{
+    * {
         text-align: center;
     }
 }
-.section-mission{
+.section-mission {
     background-color: var(--color_blue_30);
     padding: 4rem 2rem;
-    &__container{
+    &__container {
         display: grid;
-        grid-template-areas: 
-        "header img"
-        "text text"; 
+        grid-template-areas:
+            "header img"
+            "text text";
         gap: 1rem 0rem;
         max-width: var(--max-content-width);
         margin: 0 auto;
     }
-    h3{
+    h3 {
         grid-area: header;
         margin: auto 0;
         color: var(--color_blue_80);
     }
-    img{
+    img {
         grid-area: img;
         opacity: 50%;
         max-height: 100px;
         margin-left: auto;
     }
-    p{
+    p {
         grid-area: text;
         color: var(--color_white);
     }
 }
-.section-services{
-    h3{
+.section-services {
+    margin: 0rem auto;
+    h3 {
         text-align: center;
         color: var(--color_blue_30);
     }
-    &__container{
+    &__container {
         max-width: var(--max-content-width);
         margin: 0 auto;
     }
-    &__options{
+    &__options {
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 5rem;
 
-        &__seperator{
+        &__seperator {
             width: 80%;
             display: block;
             height: 5px;
             border-bottom: var(--medium-stroke) dashed var(--color_grey_55);
         }
-        &__entry{
+        &__entry {
             display: flex;
             align-items: center;
             flex-direction: column;
             transition: 0.3s ease-in-out;
-            img{
+            img {
                 width: 360px;
                 margin-bottom: 1rem;
             }
@@ -120,35 +121,34 @@
         }
     }
 }
-.section-nameHover-home{
+.section-nameHover-home {
     background-color: var(--color_black);
     fill: var(--color_white);
-    
-    h3{
+
+    h3 {
         font-size: var(--heading-h3);
         color: var(--color_blue_80);
         text-align: center;
         margin: 1rem auto;
     }
 }
-.section-inspiration{
+.section-inspiration {
     gap: 5rem;
 
-    &__story{
-        h4{
+    &__story {
+        h4 {
             text-align: center;
         }
-        p{
-            margin: auto 1rem;
-
+        p {
+            margin: auto 0;
         }
-        
-        &__links{
+
+        &__links {
             display: flex;
             width: fit-content;
             margin: 2rem auto;
             gap: 1rem;
-            svg{
+            svg {
                 width: 32px;
                 height: 32px;
             }
@@ -156,24 +156,24 @@
     }
 }
 @media (min-width: 768px) {
-    .section-mission{
-        img{
+    .section-mission {
+        padding: 4rem 4rem;
+        img {
             max-height: 201px;
         }
-        &__container{
+        &__container {
             grid-template-areas: "header img" "text img";
             gap: 1rem 2rem;
         }
     }
-    .section-services__options{
+    .section-services__options {
         flex-direction: row;
-        margin-top: 3rem;
-        &__entry img{
+        &__entry img {
             max-width: 512px;
             width: 100%;
         }
 
-        &__seperator{
+        &__seperator {
             width: 5px;
             display: block;
             height: 360px;
@@ -181,25 +181,25 @@
             border-bottom: none;
         }
     }
-    
-    .section-inspiration{
-        &__story{
+
+    .section-inspiration {
+        &__story {
             display: grid;
             grid-template-areas: "title img" "disc img" "disc img";
             max-width: var(--max-content-width);
             margin: 0 auto;
             gap: 0 5rem;
-            h4{
+            h4 {
                 align-self: center;
             }
             img {
                 grid-area: img;
             }
-            &__desc{
+            &__desc {
                 grid-area: disc;
             }
         }
-        &__story:nth-child(2){
+        &__story:nth-child(2) {
             grid-template-areas: "img title" "img disc" "img disc";
         }
     }

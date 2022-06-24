@@ -15,10 +15,9 @@
     <?php $dark_nav = false; include 'parts/nav.php'; ?>
     </header>
     <main class="page limit-page-width">
-        <h2 class="page__title"><?php echo get_the_title(); ?></h2>
-
+        
         <section class="page-post">
-            <?php echo get_the_content(); ?>
+            <h2 class="page__title"><?php echo get_the_title(); ?></h2>
         </section>
         <section class="section-abposts">
             <?php

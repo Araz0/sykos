@@ -6,7 +6,7 @@
         gap: 5px;
         width: fit-content;
         svg{
-            max-height: 80px;
+            height: 80px;
         }
         svg:hover {
             cursor: pointer;
@@ -52,6 +52,6 @@
 
 @media (min-width: 768px) {
     .sykos-container__name svg{
-        max-height: 180px;
+        height: 180px;
     }
 }

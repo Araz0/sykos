@@ -26,7 +26,7 @@
 }
 @media (min-width: 768px) {
     .footer{
-        grid-template-areas: "nav logo legal" "nav socials legal";
+        grid-template-areas: "navl logo navr" "navl logo navr";
         gap: 3rem 0;
         ul{
             height: fit-content;
@@ -38,10 +38,10 @@
             grid-area: socials;
         }
         &__menu-pages{
-            grid-area: nav;
+            grid-area: navl;
         }
-        &__menu-legal{
-            grid-area: legal;
+        &__menu-right{
+            grid-area: navr;
         }
     }
 }

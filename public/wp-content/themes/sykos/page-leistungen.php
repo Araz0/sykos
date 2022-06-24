@@ -17,12 +17,11 @@
     <main class="page">
         <h2 class="page__title"><?php echo get_the_title(); ?></h2>
 
-        <section class="page-post">
+        <section class="page-post0padding">
             <?php echo get_the_content(); ?>
         </section>
         <section class="section-services">
             <div class="section-services__container">
-                <h3>Unser Angebot für Sie</h3>
                 <div class="section-services__options">
                 <?php 
                     $services_uri1 = get_permalink( get_page_by_path( 'privatperson' ) );

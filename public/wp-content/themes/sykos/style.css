@@ -81,7 +81,7 @@ Text Domain: sykos.net
   font-style: normal;
 }
 html {
-  font-size: 120%;
+  font-size: 125%;
 }
 
 * {
@@ -160,10 +160,6 @@ a svg:hover {
   fill: var(--color_blue_50);
 }
 
-.link {
-  border-bottom: var(--medium-stroke) solid;
-}
-
 p {
   margin-bottom: 1rem;
   line-height: 1.5rem;
@@ -217,8 +213,20 @@ li {
   margin-top: 0;
   margin-bottom: 0;
 }
+.page-post ul {
+  margin: 1rem 2rem;
+}
+.page-post ul li {
+  list-style: disc;
+}
 .page__title {
-  margin-top: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.page-post0padding {
+  padding: 0 4rem;
+  margin: 1rem auto;
 }
 
 .section-abposts {
@@ -233,13 +241,17 @@ li {
 }
 
 @media (min-width: 768px) {
+  section {
+    padding: 1rem 4rem;
+  }
+
   .page {
     margin: 0 10%;
   }
   .page-hero {
     min-height: 16rem;
     height: 25rem;
-    background-position: center center;
+    background-position: center top;
   }
 
   .section-abposts__post {
@@ -263,6 +275,10 @@ li {
 .limit-page-width {
   margin: 0 auto !important;
   max-width: 1280px;
+}
+
+.section-contact {
+  margin: 0;
 }
 
 .navbar ul li {
@@ -370,7 +386,7 @@ li {
 
 @media (min-width: 768px) {
   .footer {
-    grid-template-areas: "nav logo legal" "nav socials legal";
+    grid-template-areas: "navl logo navr" "navl logo navr";
     gap: 3rem 0;
   }
   .footer ul {
@@ -383,10 +399,10 @@ li {
     grid-area: socials;
   }
   .footer__menu-pages {
-    grid-area: nav;
+    grid-area: navl;
   }
-  .footer__menu-legal {
-    grid-area: legal;
+  .footer__menu-right {
+    grid-area: navr;
   }
 }
 .sykos-container {
@@ -399,7 +415,7 @@ li {
   width: fit-content;
 }
 .sykos-container__name svg {
-  max-height: 80px;
+  height: 80px;
 }
 .sykos-container__name svg:hover {
   cursor: pointer;
@@ -443,7 +459,7 @@ li {
 
 @media (min-width: 768px) {
   .sykos-container__name svg {
-    max-height: 180px;
+    height: 180px;
   }
 }
 .hero-home {
@@ -453,13 +469,14 @@ li {
   height: fit-content;
   overflow: hidden;
   text-align: center;
-  background: url("./media/home-hero-bk.jpeg");
+  background: url("./media/home_hero.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
+  /* optional, center the image */
 }
 .hero-home::before {
   content: "";
@@ -487,7 +504,9 @@ li {
   z-index: 1;
 }
 .hero-home__logo {
-  margin: 1rem auto;
+  margin: 0rem auto 3rem auto;
+  max-width: 35rem;
+  width: 100%;
 }
 .hero-home__cite {
   color: var(--color_white);
@@ -528,6 +547,9 @@ li {
   color: var(--color_white);
 }
 
+.section-services {
+  margin: 0rem auto;
+}
 .section-services h3 {
   text-align: center;
   color: var(--color_blue_30);
@@ -580,7 +602,7 @@ li {
   text-align: center;
 }
 .section-inspiration__story p {
-  margin: auto 1rem;
+  margin: auto 0;
 }
 .section-inspiration__story__links {
   display: flex;
@@ -594,6 +616,9 @@ li {
 }
 
 @media (min-width: 768px) {
+  .section-mission {
+    padding: 4rem 4rem;
+  }
   .section-mission img {
     max-height: 201px;
   }
@@ -604,7 +629,6 @@ li {
 
   .section-services__options {
     flex-direction: row;
-    margin-top: 3rem;
   }
   .section-services__options__entry img {
     max-width: 512px;
@@ -657,25 +681,28 @@ li {
 
 .section-bio {
   padding: 0;
-  margin: 2rem 0 5rem 0;
+  margin: 5rem 0 5rem 0;
   background-color: var(--color_grey_05);
 }
 .section-bio__container {
   padding: 0rem 1rem;
   color: var(--color_white);
 }
+.section-bio__container__bio_text {
+  padding: 2rem 0rem;
+}
 .section-bio__container__bio_text__header {
   color: var(--color_white);
 }
 .section-bio__container__img1 {
-  margin-top: -1.5rem;
-  padding-left: 2rem;
+  margin-top: -2.5rem;
 }
-.section-bio__container__img2, .section-bio__container__img3 {
-  margin-top: 2rem;
+.section-bio__container-double {
+  padding: 2rem 1rem;
+  color: var(--color_white);
 }
-.section-bio__container__img3 {
-  margin-bottom: -3rem;
+.section-bio__container-double div h3 {
+  color: var(--color_blue_50);
 }
 
 .section-team__header {
@@ -717,27 +744,19 @@ li {
 
   .section-bio__container {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr 1fr 5fr 1fr;
-    grid-template-rows: 1fr 3fr 2fr 1fr 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     max-width: 90rem;
     margin: 0 auto;
     padding: 0rem 8rem;
+    gap: 2rem;
   }
-  .section-bio__container__img1 {
-    grid-column: 5/7;
-    grid-row: 1/5;
-  }
-  .section-bio__container__bio_text {
-    grid-column: 1/4;
-    grid-row: 2/3;
-  }
-  .section-bio__container__img2 {
-    grid-column: 2/4;
-    grid-row: 3/6;
-  }
-  .section-bio__container__img3 {
-    grid-column: 3/6;
-    grid-row: 4/7;
+  .section-bio__container-double {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 2rem 8rem;
+    gap: 2rem;
   }
 
   .section-team {
@@ -759,20 +778,46 @@ li {
     z-index: -1;
   }
 }
+@media (max-width: 1200px) {
+  .section-bio__container-double {
+    grid-template-columns: 1fr;
+  }
+}
 .page-contact .page__title {
   margin: 3rem 5%;
 }
 
 .section-contact {
-  background-color: var(--color_grey_05);
+  padding: 0rem;
+  margin-bottom: 3rem;
   color: var(--color_white);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 .section-contact__container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
-  width: 90%;
   margin: 0 auto;
+  background-color: var(--color_grey_05);
+  padding: 1rem 4rem;
+  border-radius: 5px;
+}
+.section-contact__container__message {
+  margin-top: 1.9rem;
+}
+.section-contact__container__message h3 {
+  color: var(--color_blue_50);
+  font-size: var(--heading-h4);
+}
+.section-contact__container__message p svg {
+  width: 22px;
+  margin-bottom: -4px;
+  margin-right: 8px;
 }
 
 form {
@@ -797,26 +842,28 @@ form textarea {
   width: 100%;
 }
 form input[type=submit] {
-  width: 12rem;
   height: 2.5rem;
-  background-color: var(--color_blue_50);
+  background-color: var(--color_blue_30);
   border: none;
   border-radius: 8px;
   color: var(--color_white);
-  font-size: var(--heading-h5);
+  font-size: 1rem;
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
   .page-contact .page__title {
-    margin: 3rem 10%;
+    margin: 1rem 10%;
   }
 
   .section-contact__container {
-    width: 80%;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
   }
 }
+.wpforms-error-container {
+  max-width: 32rem;
+}
+
 .section-testomonials > div > div {
   position: relative;
 }

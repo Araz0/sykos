@@ -3,10 +3,18 @@
     <?php include 'parts/head.php'; ?>
 <body>
     <?php //wp_body_open();?>
+    <?php
+            $thumbnail_Link = get_template_directory_uri()."/media/home-hero-bk.jpeg";
+            $thumbnaul_alt = "page thumbnail image";
+            if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+                $thumbnail_Link= get_the_post_thumbnail_url();
+                $thumbnaul_alt = get_the_post_thumbnail_caption();
+            }
+        ?>
     <header class="hero-home">
     <?php include 'parts/nav.php'; ?>
         <img class="hero-home__logo" src="<?php echo get_template_directory_uri() ?>/media/SYKOS-logo-RGB-white.png" alt="SYKOS logo RGB white">
-        <cite class="hero-home__cite">Sie können die hohen Wellen des Meeres nicht ändern, so sehr Sie es versuchen. Zielführender ist, zu lernen, wie man in schwierigen Situationen navigiert</cite>
+        <p class="hero-home__cite">Sie können die hohen Wellen des Meeres nicht ändern, so sehr Sie es versuchen. Zielführender ist, zu lernen, wie man in schwierigen Situationen navigiert</p>
     </header>
     <main>
         <section class="section-intro">
