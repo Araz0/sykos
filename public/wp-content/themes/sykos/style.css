@@ -507,6 +507,7 @@ li {
   margin: 0rem auto 3rem auto;
   max-width: 35rem;
   width: 100%;
+  filter: drop-shadow(1px 1px 5px #22222247);
 }
 .hero-home__cite {
   color: var(--color_white);
@@ -593,6 +594,10 @@ li {
   color: var(--color_blue_80);
   text-align: center;
   margin: 1rem auto;
+}
+
+.section-testomonials h3 {
+  text-align: center;
 }
 
 .section-inspiration {
@@ -682,7 +687,7 @@ li {
 .section-bio {
   padding: 0;
   margin: 5rem 0 5rem 0;
-  background-color: var(--color_grey_05);
+  background-color: var(--color_blue_30);
 }
 .section-bio__container {
   padding: 0rem 1rem;
@@ -702,7 +707,7 @@ li {
   color: var(--color_white);
 }
 .section-bio__container-double div h3 {
-  color: var(--color_blue_50);
+  color: var(--color_blue_80);
 }
 
 .section-team__header {
@@ -803,7 +808,7 @@ li {
   grid-template-columns: 1fr;
   gap: 3rem;
   margin: 0 auto;
-  background-color: var(--color_grey_05);
+  background-color: var(--color_blue_30);
   padding: 1rem 4rem;
   border-radius: 5px;
 }
@@ -811,7 +816,7 @@ li {
   margin-top: 1.9rem;
 }
 .section-contact__container__message h3 {
-  color: var(--color_blue_50);
+  color: var(--color_blue_80);
   font-size: var(--heading-h4);
 }
 .section-contact__container__message p svg {
@@ -843,7 +848,7 @@ form textarea {
 }
 form input[type=submit] {
   height: 2.5rem;
-  background-color: var(--color_blue_30);
+  background-color: var(--color_blue_50);
   border: none;
   border-radius: 8px;
   color: var(--color_white);
