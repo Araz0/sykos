@@ -43,6 +43,7 @@
         margin: 0rem auto 3rem auto;
         max-width: 35rem;
         width: 100%;
+        filter: drop-shadow(1px 1px 5px #22222247);
     }
     &__cite {
         color: var(--color_white);
@@ -130,6 +131,11 @@
         color: var(--color_blue_80);
         text-align: center;
         margin: 1rem auto;
+    }
+}
+.section-testomonials {
+    h3 {
+        text-align: center;
     }
 }
 .section-inspiration {
