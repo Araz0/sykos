@@ -16,9 +16,11 @@
     </header>
     <main class="page limit-page-width">
         <h2 class="page__title"><?php echo get_the_title(); ?></h2>
-
         <section class="page-post">
             <?php echo get_the_content(); ?>
+            <?php if( get_field('page_shortcode') ): ?>
+                <?php echo do_shortcode( get_field('page_shortcode') ) ?>
+            <?php endif; ?>
         </section>
     </main>
     <?php include 'parts/footer.php'; ?>
