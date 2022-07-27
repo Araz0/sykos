@@ -55,6 +55,7 @@
         </section>
         <?php if (get_field('testimonials_shortcode')) : ?>
             <section class="section-testomonials">
+                <h3>Das sagen unsere Kunden</h3>
                 <?php echo do_shortcode(get_field('testimonials_shortcode')) ?>
                 <!-- The dots/circles -->
                 <!-- <div style="text-align:center">

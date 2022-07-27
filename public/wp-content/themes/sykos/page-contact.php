@@ -29,7 +29,7 @@
         <?php $dark_nav = true; include 'parts/nav.php'; ?>
     </header>
     <main class="page-contact">
-        <h2 class="page__title"><?php echo get_the_title(); ?></h2>
+        <h2 class="page__title">Kommen wir ins Gespräch!</h2>
         <?php
             $section_background_Link = get_template_directory_uri()."/media/home-hero-bk.jpeg";
             if (get_field('form_section_background')) {
