@@ -49,5 +49,5 @@
 
   function new_excerpt_more($output) {
     return $output . '<p class="section-abposts__post__content__text"><a href="'. get_permalink() . '">' . 'Mehr lesen...' . '</a></p>';
-}
-add_filter('get_the_excerpt', 'new_excerpt_more');
+  }
+  add_filter('get_the_excerpt', 'new_excerpt_more');
