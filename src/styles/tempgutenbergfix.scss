@@ -1,0 +1,44 @@
+// start of temp fix for gutenberg styling columns issue
+.wp-block-columns {
+    display: flex;
+}
+
+.wp-block-column {
+    flex: 1;
+}
+
+/* Add vertical breathing room to the full row of columns. */
+.wp-block-columns {
+    margin: 20px 0;
+}
+
+/* Add horiztonal breathing room between individual columns. */
+.wp-block-column {
+    margin: 0 20px;
+}
+
+@media (max-width: 764px) {
+    .wp-block-columns.has-3-columns {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .wp-block-columns.has-3-columns {
+        flex-flow: row wrap;
+    }
+
+    .has-3-columns .wp-block-column:first-child {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 478px) {
+    .wp-block-columns.has-3-columns {
+        display: block;
+    }
+
+    .wp-block-column {
+        margin: 20px 0;
+    }
+}
+// end of temp fix for gutenberg styling columns issue
