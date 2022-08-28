@@ -918,7 +918,6 @@ form input[type=submit] {
   height: 120px;
   width: 120px;
   object-fit: cover;
-  border: 1px solid black;
 }
 .sp-testimonial-item .sp-testimonial-title {
   display: flex;
@@ -937,6 +936,10 @@ form input[type=submit] {
 }
 .sp-testimonial-item .sp-testimonial-client-rating .fa.fa-star[aria-hidden] {
   color: orange;
+}
+
+.testimonial-nav-arrow {
+  display: none;
 }
 
 .wp-block-columns {

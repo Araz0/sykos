@@ -44,14 +44,11 @@
       height: 120px;
       width: 120px;
       object-fit: cover;
-      border: 1px solid black;
     }
   }
   .sp-testimonial-title {
     display: flex;
     justify-content: center;
-    h3 {
-    }
   }
   .sp-testimonial-client-testimonial,
   .sp-testimonial-client-name,
@@ -67,4 +64,7 @@
       color: orange;
     }
   }
+}
+.testimonial-nav-arrow {
+  display: none;
 }
