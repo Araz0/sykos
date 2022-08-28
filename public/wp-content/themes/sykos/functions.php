@@ -51,3 +51,9 @@
     return $output . '<p class="section-abposts__post__content__text"><a href="'. get_permalink() . '">' . 'Mehr lesen...' . '</a></p>';
   }
   add_filter('get_the_excerpt', 'new_excerpt_more');
+
+
+  add_theme_support( 'wp-block-styles' );
+  add_theme_support( 'align-wide' );
+  add_theme_support( 'editor-styles' );
+  add_theme_support( 'responsive-embeds' );
