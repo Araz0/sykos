@@ -3,19 +3,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start | sykos</title>
-    
+
     <script type="module">
         document.documentElement.classList.remove('no-js');
         document.documentElement.classList.add('js');
     </script>
 
-    <meta name="description"
-    content="In Zeiten tiefgreifender Veränderungen sind wesentliche Fertigkeiten hilfreich, um Lösungen zu finden und definierte Ziele zu erreichen. " />
+    <meta name="description" content="In Zeiten tiefgreifender Veränderungen sind wesentliche Fertigkeiten hilfreich, um Lösungen zu finden und definierte Ziele zu erreichen. " />
     <meta property="og:title" content="Start | sykos" />
     <meta property="og:site_name" content="sykos">
     <meta name="keywords" content="Beratung, Coaching">
-    <meta property="og:description"
-    content="In Zeiten tiefgreifender Veränderungen sind wesentliche Fertigkeiten hilfreich, um Lösungen zu finden und definierte Ziele zu erreichen. " />
+    <meta property="og:description" content="In Zeiten tiefgreifender Veränderungen sind wesentliche Fertigkeiten hilfreich, um Lösungen zu finden und definierte Ziele zu erreichen. " />
     <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/Sykos-banner.png" />
     <meta property="og:image:alt" content="Logo von Sykos" />
     <meta property="og:type" content="website" />
@@ -37,4 +35,7 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <?php
+    wp_head();
+    ?>
 </head>
