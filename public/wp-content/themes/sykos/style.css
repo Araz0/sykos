@@ -281,6 +281,10 @@ li {
   margin: 0;
 }
 
+#cookie-law-info-again {
+  display: none !important;
+}
+
 .navbar ul li {
   list-style: none;
   height: fit-content;
@@ -711,6 +715,23 @@ li {
   color: var(--color_blue_80);
 }
 
+.section-team_container .rt-content-loader {
+  flex-wrap: wrap;
+  flex-direction: unset;
+  justify-content: center;
+  display: flex;
+}
+.section-team_container img {
+  margin: 0 auto;
+}
+.section-team_container .tlp-content h3 {
+  margin: 0 !important;
+  line-height: 1.5rem;
+}
+.section-team_container .short-bio p {
+  margin: 0 !important;
+}
+
 .section-team__header {
   text-align: center;
 }
@@ -722,25 +743,6 @@ li {
 }
 .section-team__members_container__SYKOS_Name {
   display: none;
-}
-.section-team__members_container__member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.section-team__members_container__member__img {
-  height: 250px;
-  width: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-.section-team__members_container__member__name {
-  margin-bottom: 0;
-}
-.section-team__members_container__member__title {
-  max-width: 200px;
-  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -766,7 +768,7 @@ li {
   }
 
   .section-team {
-    max-width: 80%;
+    max-width: 1300px !important;
   }
   .section-team__members_container {
     flex-wrap: wrap;

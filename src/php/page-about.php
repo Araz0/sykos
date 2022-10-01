@@ -78,6 +78,7 @@
             ?>
             <h2 class="section-team__header"><?php echo $coop_title; ?></h2>
             <p class="section-team__text"><?php echo $coop_text; ?></p>
+
             <div class="section-team__members_container">
                 <svg class="section-team__members_container__SYKOS_Name" data-name="SYKOS Name" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 628.41 155.38">
                     <path d="M45.7,155.18c-14.53-.85-30.49-4.9-43.43-17.12-3.3-3.12-3.41-6.5-1-10.17.45-.69.78-1.45,1.19-2.16,6.84-11.84,10.08-10.27,18.2-4a53.28,53.28,0,0,0,27.09,11,19.49,19.49,0,0,0,22-20.8c-.46-7.08-5.66-11.5-10.9-14.56-10.35-6-21.48-10.71-32.08-16.34C18.42,76.63,10.92,71.13,5.9,62.72-4.12,46-.79,18.15,19.71,7.53c23.15-12,45.54-8.42,67,4.73,4.82,3,5.18,6.74,2,11.73C81,36.29,81,36.31,68.11,29.81c-7.38-3.73-14.74-7.3-23.42-6.7-7.64.53-13.75,3.65-17.58,10.24-4.17,7.18-1.31,17.74,6.81,22.29C45.66,62.2,57.94,67.78,70,73.83A52.94,52.94,0,0,1,89.32,89.55c13.61,18.37,9,45.5-11.38,57.58C68.25,152.87,60.25,155.08,45.7,155.18Z" transform="translate(0.4 0.2)" />
@@ -86,31 +87,9 @@
                     <path d="M437.49.84c42-1.35,77.38,33.78,77.16,77.06S482.64,156,435.27,155c-44.06-1-75.06-33.47-75.28-77.14C359.76,34.49,394.93-.63,437.49.84Zm52.14,76.79c1.25-27.84-24.42-51.52-50.24-52.73-29.16-1.37-53.83,26.27-54.68,50.36-1.1,31.17,24.23,55.41,52.4,55.38C465.88,130.62,490.94,106.31,489.63,77.63Z" transform="translate(0.4 0.2)" />
                     <path d="M578.87-.2c14.42.2,27.06,4.85,39,12.06,4.27,2.58,5.37,6.5,3.09,11a17.15,17.15,0,0,1-1,1.67c-6.44,9.75-7.47,13.19-20.11,5.34-7.33-4.56-15.5-7.42-24.39-6.67-6.82.57-12.88,2.95-16.55,9.19-4.82,8.16-1.92,18.26,7.75,24.19a172.3,172.3,0,0,0,22.5,11.13C600.93,72.78,612,78.87,620.26,89a33.26,33.26,0,0,1,7.64,19.42c.59,11.16-.88,21.44-8.91,30.37a47.35,47.35,0,0,1-28.33,15.33c-20.21,3.42-38.43-1.55-54.8-13.83-5.8-4.36-6.52-6.64-3.12-12.7.16-.29.35-.56.51-.86,6.61-11.84,7.91-12.29,18.75-4.75a66.24,66.24,0,0,0,25.63,10.78c9.2,1.76,22.36-6.56,23.74-15.76,1.23-8.23-3-14.64-9.77-18.67a268.3,268.3,0,0,0-25.36-13c-11.1-5.1-21.71-11-28.33-21.52-13.83-22-4.69-50.54,20.35-59.73C564.77,1.61,572,1.15,578.87-.2Z" transform="translate(0.4 0.2)" />
                 </svg>
-                <div class="section-team__members_container__member">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/team/team-member1.jpg" alt="sykos team member" class="section-team__members_container__member__img">
-                    <p class="section-team__members_container__member__name">Magdalena Schusterbauer</p>
-                    <span class="section-team__members_container__member__title">Mentaltrainerin</span>
-                </div>
-                <div class="section-team__members_container__member">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/team/team-member2.jpg" alt="sykos team member" class="section-team__members_container__member__img">
-                    <p class="section-team__members_container__member__name">Peter Beingrübel</p>
-                    <span class="section-team__members_container__member__title">Unternehmensberater, Coach & Trainer</span>
-                </div>
-                <div class="section-team__members_container__member">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/team/team-member3.jpg" alt="sykos team member" class="section-team__members_container__member__img">
-                    <p class="section-team__members_container__member__name">Carina Gloss</p>
-                    <span class="section-team__members_container__member__title">Coach und Trainerin für erhöhte Wahrnehmung, Resilienz & Persönlichkeitsentwicklung </span>
-                </div>
-                <div class="section-team__members_container__member">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/team/team-member4.jpg" alt="sykos team member" class="section-team__members_container__member__img">
-                    <p class="section-team__members_container__member__name">Markus Kugler</p>
-                    <span class="section-team__members_container__member__title">Coach</span>
-                </div>
-                <div class="section-team__members_container__member">
-                    <img src="<?php echo get_template_directory_uri() ?>/media/team/team-member5.jpg" alt="sykos team member" class="section-team__members_container__member__img">
-                    <p class="section-team__members_container__member__name">Tanja Lettner</p>
-                    <span class="section-team__members_container__member__title">Trainerin</span>
-                </div>
+                <?php if (get_field('page_shortcode')) : ?>
+                    <?php echo do_shortcode(get_field('page_shortcode')) ?>
+                <?php endif; ?>
             </div>
         </section>
     </main>

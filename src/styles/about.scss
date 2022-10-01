@@ -43,6 +43,26 @@
         }
     }
 }
+.section-team_container{
+    .rt-content-loader{
+        flex-wrap: wrap;
+        flex-direction: unset;
+        justify-content: center;
+        display: flex;
+    }
+    img{ 
+        margin: 0 auto;
+    }
+    .tlp-content{
+        h3{
+            margin: 0 !important;
+            line-height: 1.5rem;
+        }
+    }
+    .short-bio p{
+        margin: 0 !important;
+    }
+}
 .section-team{
     &__header{
         text-align: center;
@@ -54,25 +74,6 @@
         margin-top: 3rem;
         &__SYKOS_Name{
             display: none;
-        }
-        &__member{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            &__img{
-                height: 250px;
-                width: 250px;
-                object-fit: cover;
-                border-radius: 50%;
-                margin-bottom: 1rem;
-            }
-            &__name{
-                margin-bottom: 0;
-            }
-            &__title{
-                max-width: 200px;
-                text-align: center;
-            }
         }
     }
 }
@@ -103,7 +104,7 @@
         }
     }
     .section-team{
-        max-width: 80%;
+        max-width: 1300px !important;
         &__members_container{
             flex-wrap: wrap;
             flex-direction: unset;
