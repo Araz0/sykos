@@ -50,36 +50,6 @@ Text Domain: sykos.net
     --body-small: 14.4px;
   }
 }
-@font-face {
-  font-family: "brandon-grotesque";
-  src: url("fonts/Brandon_blk.otf");
-  font-weight: 800;
-  font-style: black;
-}
-@font-face {
-  font-family: "brandon-grotesque";
-  src: url("fonts/Brandon_bld.otf");
-  font-weight: 600;
-  font-style: bold;
-}
-@font-face {
-  font-family: "brandon-grotesque";
-  src: url("fonts/Brandon_med.otf");
-  font-weight: 600;
-  font-style: medium;
-}
-@font-face {
-  font-family: "brandon-grotesque";
-  src: url("fonts/Brandon_reg_it.otf");
-  font-weight: 400;
-  font-style: Regular-Italic;
-}
-@font-face {
-  font-family: "brandon-grotesque";
-  src: url("fonts/Brandon_reg.otf");
-  font-weight: 400;
-  font-style: normal;
-}
 html {
   font-size: 125%;
 }
@@ -194,8 +164,7 @@ li {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
-  /* optional, center the image */
+  background-position: center top; /* optional, center the image */
 }
 .page-hero::before {
   content: "";
@@ -244,7 +213,6 @@ li {
   section {
     padding: 1rem 4rem;
   }
-
   .page {
     margin: 0 10%;
   }
@@ -253,7 +221,6 @@ li {
     height: 25rem;
     background-position: center top;
   }
-
   .section-abposts__post {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -356,7 +323,6 @@ li {
     padding: 0;
     border-bottom: none;
   }
-
   .navbar ul li a {
     color: var(--color_white);
     font-weight: 500;
@@ -480,8 +446,7 @@ li {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
-  /* optional, center the image */
+  background-position: center top; /* optional, center the image */
 }
 .hero-home::before {
   content: "";
@@ -512,7 +477,7 @@ li {
   margin: 0rem auto 3rem auto;
   max-width: 35rem;
   width: 100%;
-  filter: drop-shadow(1px 1px 5px #22222247);
+  filter: drop-shadow(1px 1px 5px rgba(34, 34, 34, 0.2784313725));
 }
 .hero-home__cite {
   color: var(--color_white);
@@ -636,7 +601,6 @@ li {
     grid-template-areas: "header img" "text img";
     gap: 1rem 2rem;
   }
-
   .section-services__options {
     flex-direction: row;
   }
@@ -651,7 +615,6 @@ li {
     border-left: var(--medium-stroke) dashed var(--color_grey_55);
     border-bottom: none;
   }
-
   .section-inspiration__story {
     display: grid;
     grid-template-areas: "title img" "disc img" "disc img";
@@ -749,7 +712,6 @@ li {
   .header-about .navbar ul li a {
     color: var(--color_black);
   }
-
   .section-bio__container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -766,7 +728,6 @@ li {
     padding: 2rem 8rem;
     gap: 2rem;
   }
-
   .section-team {
     max-width: 1300px !important;
   }
@@ -863,7 +824,6 @@ form input[type=submit] {
   .page-contact .page__title {
     margin: 1rem 10%;
   }
-
   .section-contact__container {
     grid-template-columns: 2fr 1fr;
   }

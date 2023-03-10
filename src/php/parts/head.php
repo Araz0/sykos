@@ -35,6 +35,7 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wgi4cqz.css">
     <?php
     wp_head();
     ?>
